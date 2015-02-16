@@ -1,0 +1,6 @@
+obj
+bin
+Properties
+adfitech-integration.csproj.user
+*.config
+*.csproj

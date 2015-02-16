@@ -1,0 +1,55 @@
+EH                                20140820   ENV1     
+TH T100099-002TRAN1    
+TPI1.00 01                              N
+0001  3.20 W
+00ANN
+01A01                                                                                                              0102030405         1550000.00  5.00036001                                                                                3505                                                                            
+02A3045 Alta Laguna Boulevard                        Laguna Beach                       CA92651      1F1SEE EXHIBIT A                                                                   1964
+02B  05                                                                                1Married woman                                               1        
+02CTil C. Astrid                                           
+02D2013     2500000.00           0.00           0.00           0.00F1                                                                                            0.00
+03ABW123456789Til                                C.                                 Astrid                                 9492121932 5816M 0N         19551210colleenriley10@gmail.com                                                        
+03C123456789ZG3045 Alta Laguna Blvd                             Laguna Beach                       CA92651    O 0 7                                                  
+03C123456789F41531 Creekside Drive                              Williston                          ND58801    O 1 7                                                  
+04A123456789Devon International, L.P.          4184 East Springfield Street       Simi Valley                        CA93063    N10 220Owner-Manager            9192121932
+05H123456789126       11302.00
+05H123456789101         470.50
+05H123456789114        1862.48
+05H123456789226        6458.33
+05H123456789201         470.68
+05H123456789214        2025.63
+05I12345678920       47036.71
+06C12345678903 Wels Fargo Bank                                                                                                     9016358260                           40780.39                                                                                          
+06C123456789SG Wels Fargo Bank                                                                                                     7784923992                             937.24                                                                                          
+06C12345678903 Bank of America                                                                                                     000987266449                         63584.78                                                                                          
+06C123456789SG Bank of America                                                                                                     000987267996                         55321.71                                                                                          
+06G1234567893045 Alta Laguna Boulevard         Laguna Beach                       CA92651    H14     2550000.00     1550000.00           0.00       11302.00           0.00           0.00YY1                
+06G1234567891531 Creekside Drive               Williston                          ND58801    R14     2000000.00     1293622.00           0.00        6975.00           0.00       -6975.00NN2                
+06G1234567893898 Waakaula St                   Wailea                             HI96753    H14     3500000.00     1500000.00           0.00        6000.00           0.00       -6000.00NN3                
+06G1234567892806 23rd St                       Williston                          ND58801    R14      280000.00           0.00           0.00           0.00           0.00           0.00NN4                
+06G1234567892810 23rd St                       Williston                          ND58801    H14      280000.00           0.00           0.00           0.00           0.00           0.00NN5                
+06G1234567891901 Timbers St.                   Williston                          ND58801    R14      380000.00           0.00           0.00           0.00           0.00           0.00NN6                
+06G123456789139th Ave                          Williston                          ND58801    H07     1500000.00           0.00           0.00           0.00           0.00           0.00NN7                
+06G1234567892622 Bradford Court                Williston                          ND58801    R14      330000.00           0.00           0.00           0.00           0.00           0.00NN8                
+06G1234567892206 25 Ave                        Williston                          ND58801    R14      450000.00           0.00           0.00           0.00           0.00           0.00NN9                
+06G12345678914014 Madison Lane                 Williston                          ND58801    R14      520000.00           0.00           0.00           0.00           0.00           0.00NN10               
+06L123456789M SILVGATEMGT/DOVENMUEHL                                                                                              3100019296813                        11302.00  6     1550000.00Y1 NNYN
+06L123456789M OCWEN LOAN SERVICING L                                                                                              7147362391                            6975.00243     1293622.00N2 NNNY
+06L123456789R BK OF AMER                                                                                                          5466322441346131                        76.00102        7698.00N  NN  
+06L123456789M TBD - Hawaii Property                                                                                                                                     6000.00  0     1500000.00N3 NNNN
+07A           0.00           0.00           0.00     1550000.00        3397.26        3940.00           0.00           0.00           0.00           0.00           0.00
+08A123456789NNNNNNNNN01YY101
+10A123456789N2                              F
+10BTBradley Israel Helman                                               9498638600Crestline Funding Corporation      18851 Bardeen Avenue Suite  1st Flo                                   Irvine                             CA92612    
+10R1234567895 
+00070 3.20 
+99B F1     2550000.00       01   Dale E Andersen                                             DLE Appraisal Service, Inc.        AR028931         
+ADSLoanOriginatorID                   4487                                              
+ADSLoanOriginationCompanyID           1978                                              
+00011 3.20 
+LNC1F01        16       N  N  5.000                      N2014091520141101  0.000   2.110N 
+PIDConv ARM 05/1 - 5/2/5 w/ IO                  3505 
+PCH360N01N F2
+ARM  0.550    2.750  5.000
+TT TRAN1    
+ET ENV1     

@@ -210,10 +210,10 @@
 
             // ovbviously replace `A LOAN NUMBER`, `A REVIEW ID` with actual data
             ex.find_reviews("A LOAN NUMBER"); 
-            ex.list_documents("A LOAN NUMBER");
+            ex.list_documents("A REVIEW ID");
             ex.get_review_images("A REVIEW ID", new List<string>{"103-1", "103-2"});
             ex.post_loan_32("A LOAN NUMBER", "A PRODUCT ID", "..\\..\\support\\data\\0102030407.fnm");
-            ex.post_loan_pdf("A LOAN NUMBER", "..\\..\\support\\images\\HDS.pdf");
+            ex.post_loan_pdf("A REVIEW ID", "..\\..\\support\\images\\HDS.pdf");
         }
     }
 }

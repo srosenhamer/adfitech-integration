@@ -421,7 +421,7 @@
         ///     POSTs a PDF to the integration service which will be processed and added to 
         ///     the loan imaging repository for the specified loan.
         /// </summary>
-        /// <param name="loan_number">The loan number to which the PDF will be added.</param>
+        /// <param name="review_id">The loan review to which the PDF will be added.</param>
         /// <param name="file_path">A valid local file path for the PDF file.</param>
         /// <param name="doc_type">
         ///     An optional document type which will be used to name the document in 

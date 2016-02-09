@@ -30,6 +30,8 @@ The `Integration` class defaults to using the staging environment but this is ea
 
 ---
 
+## Some example code utilizing the `Adfitech.Integration` class
+
 ### Initialization
 
 The `Adfitech.Integration` class can be initialized with your access key and id, from there the `HMAC` generation is handled for you for all subsequent api requests.
@@ -112,6 +114,21 @@ As noted in the previous example individual reviews are accessible directly by I
   review.item.data.ForEach(delegate(CollectionJSON.Datum field)
   {
       Console.WriteLine("      " + field.name + ": " + field.value);
+  });
+```
+
+---
+
+### Upload a PDF to to a specific Review
+
+Simply posts a PDF that will be added to loanvault attached to the specified review. `file_path` should be fully qualified file path.
+
+```
+  adf.post_pdf(review_id, file_path);
+  Console.WriteLine("PDF posted - href: " + adf.item.href + ":");
+  adf.item.data.ForEach(delegate(CollectionJSON.Datum field)
+  {
+      Console.WriteLine("  " + field.name + ": " + field.value);
   });
 ```
 

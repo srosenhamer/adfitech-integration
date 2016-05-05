@@ -387,7 +387,7 @@
         /// </exception>
         public void post_loan(string loan_number, string product_id, string file_path)
         {
-            this.request_path = LOANS_PATH;
+            this.request_path = REVIEWS_PATH;
             this.template_wrapper = new CollectionJSON.TemplateWrapper();
             this.template_wrapper.template.data = new List<CollectionJSON.Datum> {
                 new CollectionJSON.Datum("loan_number", loan_number),
@@ -411,7 +411,7 @@
         /// </param>
         public void post_loan(string loan_number, List<CollectionJSON.Datum> data)
         {
-            this.request_path = LOANS_PATH;
+            this.request_path = REVIEWS_PATH;
             this.template_wrapper = new CollectionJSON.TemplateWrapper();
             this.template_wrapper.template.data = data;
             post_json();

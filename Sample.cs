@@ -178,11 +178,11 @@
                 Console.WriteLine("  " + e.error.code + ": " + e.error.message);
             }
         }
-        public void post_loan_pdf(string review_id, string file_path)
+        public void post_loan_pdf(string review_id, string file_path, string doc_type)
         {
             try
             {
-                adf.post_pdf(review_id, file_path);
+                adf.post_pdf(review_id, file_path, doc_type);
                 Console.WriteLine("PDF posted - href: " + adf.item.href + ":");
                 adf.item.data.ForEach(delegate(CollectionJSON.Datum field)
                 {
@@ -213,7 +213,7 @@
             ex.list_documents("A REVIEW ID");
             ex.get_review_images("A REVIEW ID", new List<string>{"103-1", "103-2"});
             ex.post_loan_32("A LOAN NUMBER", "A PRODUCT ID", "..\\..\\support\\data\\0102030407.fnm");
-            ex.post_loan_pdf("A REVIEW ID", "..\\..\\support\\images\\HDS.pdf");
+            ex.post_loan_pdf("A REVIEW ID", "..\\..\\support\\images\\HDS.pdf", "LNFILE");
         }
     }
 }

@@ -121,10 +121,11 @@ As noted in the previous example individual reviews are accessible directly by I
 
 ### Upload a PDF to to a specific Review
 
-Simply posts a PDF that will be added to loanvault attached to the specified review. `file_path` should be fully qualified file path.
+Simply posts a PDF that will be added to loanvault attached to the specified review. `file_path` should be fully qualified file path. 
+`doc_type` should be set to a value that is a valid Adfitech defined document code.
 
 ```
-  adf.post_pdf(review_id, file_path);
+  adf.post_pdf(review_id, file_path, doc_type);
   Console.WriteLine("PDF posted - href: " + adf.item.href + ":");
   adf.item.data.ForEach(delegate(CollectionJSON.Datum field)
   {

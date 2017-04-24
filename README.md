@@ -57,6 +57,35 @@ All following sample code assumes you instantiated an `Integration` object using
 
 ---
 
+### Register a Loan for Review
+
+In this example, we use a `Fannie 3.2` formatted file to register a loan for review.
+
+```
+  string file_path = "a_fannie32_file.fnm";
+  try
+  {
+      if(System.IO.File.Exists(file_path) == false)
+      {
+          throw new System.ArgumentException("File does not exist.");
+      }
+      adf.post_loan("0123456789", "Smithy", 123, file_path);
+      Console.WriteLine("Loan posted - href: " + adf.item.href + ":");
+      adf.item.data.ForEach(delegate(CollectionJSON.Datum field)
+      {
+          Console.WriteLine("  " + field.name + ": " + field.value);
+      });
+  }
+  catch (Adfitech.IntegrationException e)
+  {
+      Console.WriteLine("caught exception " + e.GetType() + ":");
+      Console.WriteLine("  " + e.error.code + ": " + e.error.message);
+  }
+
+```
+
+---
+
 ### Query Reviews by Loan Number
 
 In this example, we find all reviews that have been ordered for loan `0102030407`, then we find the specific review for each loan and simply write the field/value pairs to the console.

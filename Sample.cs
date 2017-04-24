@@ -8,8 +8,8 @@
     {
         private Integration adf;
         private Integration review;
-        private string api_key = "THE ACCESS KEY PROVIDED BY ADFITECH";
-        private int api_key_id = 1234; // change to the id provided by ADFITECH
+        //private string api_key = "THE ACCESS KEY PROVIDED BY ADFITECH";
+        //private int api_key_id = 1234; // change to the id provided by ADFITECH
 
         public void show_data(Integration obj)
         {
@@ -137,11 +137,15 @@
                 Console.WriteLine("  " + e.error.code + ": " + e.error.message);
             }
         }
-        public void post_loan_32(string loan_number, string product_id, string file_path)
+        public void post_loan_32(string loan_number, string last_name, string product_id, string file_path)
         {
             try
             {
-                adf.post_loan(loan_number, product_id, file_path);
+                if(System.IO.File.Exists(file_path) == false)
+                {
+                    throw new System.ArgumentException("File does not exist.");
+                }
+                adf.post_loan(loan_number, last_name, product_id, file_path);
                 Console.WriteLine("Loan posted - href: " + adf.item.href + ":");
                 adf.item.data.ForEach(delegate(CollectionJSON.Datum field)
                 {
@@ -209,11 +213,12 @@
             var ex = new Example();
 
             // ovbviously replace `A LOAN NUMBER`, `A REVIEW ID` with actual data
-            ex.find_reviews("A LOAN NUMBER"); 
-            ex.list_documents("A REVIEW ID");
-            ex.get_review_images("A REVIEW ID", new List<string>{"103-1", "103-2"});
-            ex.post_loan_32("A LOAN NUMBER", "A PRODUCT ID", "..\\..\\support\\data\\0102030407.fnm");
-            ex.post_loan_pdf("A REVIEW ID", "..\\..\\support\\images\\HDS.pdf", "LNFILE");
+            //ex.find_reviews("A LOAN NUMBER");
+            //ex.list_documents("A LOAN NUMBER");
+            //ex.list_documents(A REVIEW ID);
+            //ex.get_review_images("A REVIEW ID", new List<string>{"103-1", "103-2"});
+            //ex.post_loan_32("A LOAN NUMBER", "A LAST NAME", "A PRODUCT ID", "..\\..\\support\\data\\0102030407.fnm");
+            //ex.post_loan_pdf("A REVIEW ID", "..\\..\\support\\images\\HDS.pdf", "LNFILE");
         }
     }
 }

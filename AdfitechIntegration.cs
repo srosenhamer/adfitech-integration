@@ -380,17 +380,19 @@
         ///     POSTs a loan to the integration service using the supplied Fannie 3.2 formatted data file.
         /// </summary>
         /// <param name="loan_number">The loan number being POSTed.</param>
+        /// <param name="last_name">The primary borrower last name being POSTed.</param>
         /// <param name="product_id">The product id to which the loan is to be POSTed.</param>
         /// <param name="file_path">A valid local file path for the Fannie 3.2 formatted file.</param>
         /// <exception cref="Adfitech.IntegrationException">
         ///     Thrown when an error occurs creating the loan resource.
         /// </exception>
-        public void post_loan(string loan_number, string product_id, string file_path)
+        public void post_loan(string loan_number, string last_name, string product_id, string file_path)
         {
             this.request_path = REVIEWS_PATH;
             this.template_wrapper = new CollectionJSON.TemplateWrapper();
             this.template_wrapper.template.data = new List<CollectionJSON.Datum> {
                 new CollectionJSON.Datum("loan_number", loan_number),
+                new CollectionJSON.Datum("last_name", last_name),
                 new CollectionJSON.Datum("product_id", product_id),
                 new CollectionJSON.Datum("source_type", "Fannie32"),
                 new CollectionJSON.Datum("fannie_3_2_file", System.Convert.ToBase64String(System.IO.File.
